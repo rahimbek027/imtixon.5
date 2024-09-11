@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.admin/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="site-logo" src="./logo/logo.svg" alt="Site Logo">
+            <div class="navigation">
+                <img src="./logo/Vector (4).svg" alt="Navigation Icon">
+                <div>
+                    <input class="search" id="searchInput" type="text" placeholder="Search...">
+                    <img src="./logo/bell.svg" alt="Notification Bell">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="logout">
+            <div class="studentss">
+                <img src="./images/images.png" alt="User Avatar">
+                <p>Student Name</p>
+                <p>Admin</p>
+            </div>
+            <div class="btn">
+                <button class="std"><img src="./logo/graduation-cap 1.svg" alt="Students Icon">Students</button>
+                <button class="log"><a href="#" id="logoutButton">Logout<img src="./logo/sign-out-alt 1.svg" alt="Logout Icon"></a></button>
+            </div>
+        </div>
+        <div class="1111">
+            <div class="add-list">
+                <p>Students List</p>
+                <div>
+                    <img src="./logo/sort-logo.svg" alt="Sort Icon">
+                    <button id="showFormButton">ADD NEW STUDENT</button>
+                </div>
+            </div>
+            <div id="studentDisplay"></div>
+            
+            <!-- Form for adding a new student -->
+            <div id="studentForm" class="hidden">
+                <form id="newStudentForm">
+                    <label for="studentImage">Image:</label><br>
+                    <input autocomplete="off" type="file" id="studentImage" accept="image/*"><br>
+
+                    <label for="studentName">Name:</label><br>
+                    <input autocomplete="off" type="text" id="studentName" required><br>
+
+                    <label for="studentEmail">Email:</label><br>
+                    <input autocomplete="off" type="email" id="studentEmail" required><br>
+
+                    <label for="studentPhone">Phone:</label><br>
+                    <input autocomplete="off" type="text" id="studentPhone" required><br>
+
+                    <label for="studentPassport">Enroll Number:</label><br>
+                    <input autocomplete="off" type="text" id="studentPassport" required><br>
+
+                    <label for="studentDate">Date of Admission:</label><br>
+                    <input type="date" id="studentDate" required><br>
+
+                    <button type="submit">Submit</button>
+                    <button type="button" id="hideFormButton">Cancel</button>
+                </form>
+            </div>
+
+            <!-- Form for updating a student -->
+            <div id="updateForm" class="hidden">
+                <form id="editStudentForm">
+                    <input type="hidden" id="updateIndex"><br>
+
+                    <label for="editStudentImage">Image:</label><br>
+                    <input type="file" id="editStudentImage" accept="image/*"><br>
+
+                    <label for="editStudentName">Name:</label><br>
+                    <input type="text" id="editStudentName" required><br>
+
+                    <label for="editStudentEmail">Email:</label><br>
+                    <input type="email" id="editStudentEmail" required><br>
+
+                    <label for="editStudentPhone">Phone:</label><br>
+                    <input type="text" id="editStudentPhone" required><br>
+
+                    <label for="editStudentPassport">Passport Number:</label><br>
+                    <input type="text" id="editStudentPassport" required><br>
+
+                    <label for="editStudentDate">Registration Date:</label><br>
+                    <input type="date" id="editStudentDate" required><br>
+
+                    <button type="submit">Update</button>
+                    <button type="button" id="hideUpdateFormButton">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./admin.js"></script>
+</body>
+</html>

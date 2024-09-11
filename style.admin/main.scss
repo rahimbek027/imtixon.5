@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F8F8F8;
+}
+
+header {
+    background-color: #F2EAE1;
+    height: 60px;
+    width: 100%;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+
+        .site-logo {
+            width: 183.5px;
+            height: 24px;
+        }
+
+        .navigation {
+            width: 1170px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 44px;
+
+                input {
+                    width: 212px;
+                    height: 37px;
+                    border-radius: 5px;
+                    padding-left: 10px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    width: 270px;
+    height: 100vh;
+    background-color: #F2EAE1;
+    padding: 20px;
+    display: flex;
+    gap: 60px;
+    
+
+    .add-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1250px;
+        height: 60px;
+        padding-inline-start: 50px;
+        top: -500px;
+       
+    
+        p {
+            font-size: 22px;
+            font-weight: 700;
+        }
+    
+        div {
+            display: flex;
+            align-items: center;
+            gap: 44px;
+            padding-inline-end: 25px;
+    
+            button {
+                width: 199px;
+                height: 44px;
+                font-size: 14px;
+                color: white;
+                background-color: #FEAF00;
+                cursor: pointer;
+                border-radius: 4px;
+                border: none;
+            }
+        }
+    }
+}
+
+
+
+#studentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 500px;
+    width: 350px;
+    align-items: start;
+    z-index: 101;
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        width: 300px;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:first-of-type {
+            background-color: #FEAF00;
+            color: white;
+        }
+
+        &:last-of-type {
+            background-color: #891111;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+#updateForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 500px;
+    width: 350px;
+    align-items: start;
+    display: none;
+    z-index: 100;
+
+    label{
+        font-weight: bold;
+    }
+
+    input{
+        width: 300px;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+    }
+}
+
+#studentDisplay {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    
+
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 65px;
+    }
+}
+
+.student-info-display {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 1170px;
+    justify-content: space-between;
+   
+
+    img {
+        width: 65px;
+        height: 65px;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+
+    div {
+      
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border: solid green;
+
+
+        button {
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+
+            &.more-button {
+                background-color: #007BFF;
+                color: white;
+            }
+
+            &.update-button {
+                background-color: #28A745;
+                color: white;
+            }
+
+            &.delete-button {
+                background-color: #DC3545;
+                color: white;
+            }
+        }
+    }
+}
+
+#studentDetails{
+    border-radius: 8px;
+    min-width: 592px;
+    height: 300px;
+   margin-left: 50px;
+    display: flex;
+    gap: 50px;
+    background-color: white;
+
+    .detailss{
+        display: flex;
+        gap: 45px;
+        align-items: center;
+
+
+        .images{
+        width: 209px;
+        height: 216px;
+
+        }
+
+        .malumot{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+    }
+}
+
+.logout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+    .studentss{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        img{
+            width: 128px;
+            height: 128px;
+
+        }
+    }
+
+    .btn{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .std{
+            width: 193px;
+            height: 41px;
+            background-color: #FEAF00;
+            border: none;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            justify-content: center;
+        }
+
+        .log{
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+            
+
+        }
+    }
+}

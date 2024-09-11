@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #F8F8F8;
+}
+
+header {
+  background-color: #F2EAE1;
+  height: 60px;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+header nav .site-logo {
+  width: 183.5px;
+  height: 24px;
+}
+header nav .navigation {
+  width: 1170px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .navigation div {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+header nav .navigation div input {
+  width: 212px;
+  height: 37px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 270px;
+  height: 100vh;
+  background-color: #F2EAE1;
+  padding: 20px;
+  display: flex;
+  gap: 60px;
+}
+.container .add-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1250px;
+  height: 60px;
+  padding-inline-start: 50px;
+  top: -500px;
+}
+.container .add-list p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.container .add-list div {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  padding-inline-end: 25px;
+}
+.container .add-list div button {
+  width: 199px;
+  height: 44px;
+  font-size: 14px;
+  color: white;
+  background-color: #FEAF00;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+#studentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 500px;
+  width: 350px;
+  align-items: start;
+  z-index: 101;
+}
+#studentForm label {
+  font-weight: bold;
+}
+#studentForm input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 300px;
+}
+#studentForm button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#studentForm button:first-of-type {
+  background-color: #FEAF00;
+  color: white;
+}
+#studentForm button:last-of-type {
+  background-color: #891111;
+}
+
+.hidden {
+  display: none;
+}
+
+#updateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 500px;
+  width: 350px;
+  align-items: start;
+  display: none;
+  z-index: 100;
+}
+#updateForm label {
+  font-weight: bold;
+}
+#updateForm input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#studentDisplay {
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 1170px;
+}
+#studentDisplay div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 65px;
+}
+
+.student-info-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 1170px;
+  justify-content: space-between;
+}
+.student-info-display img {
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.student-info-display div {
+  font-size: 16px;
+  width: 150px;
+}
+.student-info-display .actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: solid green;
+}
+.student-info-display .actions button {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.student-info-display .actions button.more-button {
+  background-color: #007BFF;
+  color: white;
+}
+.student-info-display .actions button.update-button {
+  background-color: #28A745;
+  color: white;
+}
+.student-info-display .actions button.delete-button {
+  background-color: #DC3545;
+  color: white;
+}
+
+#studentDetails {
+  border-radius: 8px;
+  min-width: 592px;
+  height: 300px;
+  margin-left: 50px;
+  display: flex;
+  gap: 50px;
+  background-color: white;
+}
+#studentDetails .detailss {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+#studentDetails .detailss .images {
+  width: 209px;
+  height: 216px;
+}
+#studentDetails .detailss .malumot {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.logout .studentss {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.logout .studentss img {
+  width: 128px;
+  height: 128px;
+}
+.logout .btn {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logout .btn .std {
+  width: 193px;
+  height: 41px;
+  background-color: #FEAF00;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
+}
+.logout .btn .log a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}/*# sourceMappingURL=main.css.map */
