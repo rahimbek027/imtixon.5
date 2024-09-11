@@ -69,9 +69,11 @@ function displayStudentInfo(student) {
         <div>${student.phone}</div>
         <div> ${student.passport}</div>
         <div> ${student.date}</div>
-        <button class="more-button" onclick="showMoreDetails('${student.name}', '${student.email}', '${student.phone}', '${student.passport}', '${student.date}', '${student.image}')">More</button>
-        <button class="update-button" onclick="updateStudent(this)">Update</button>
-        <button class="delete-button" onclick="deleteStudent(this)">Delete</button>
+ <button style="border: none;background-color: white;width: 19px;height: 19px;" class="more-button" onclick="showMoreDetails('${student.name}', '${student.email}', '${student.phone}', '${student.passport}', '${student.date}', '${student.image}')"><img style="width: 19px;height: 19px;background-color: white;border: none;" src="./logo/more.svg" alt=""></button>
+<button style="border: none;background-color: white;width: 19px;height: 19px;" class="update-button" onclick="updateStudent(this)"><img style="width: 19px;height: 19px;background-color: white;border: none;" src="./logo/Vector (4).png" alt=""></button>
+    <button style="border: none;background-color: white;width: 19px;height: 19px;" class="delete-button" onclick="deleteStudent(this)"><img style="width: 19px;height: 19px;background-color: white;border: none;" src="./logo/delete.svg" alt=""></button>
+    
+   
     </div>
     `;
     
